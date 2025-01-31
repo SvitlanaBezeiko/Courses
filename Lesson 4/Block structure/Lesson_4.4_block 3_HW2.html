@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            height: 20vh;
+            background: #8D8484;
+            text-align: center;
+        }
+        footer{
+            background: #BDBDBD;
+            height: 20vh;
+            align-items: center;
+        }
+        main {
+            display: flex;
+            height: 60vh;
+        }
+        section{
+            width: 105vw;
+        }
+        .section div{
+            height: 20vh;
+        }
+        .Content-one{
+            background: #776969;
+            height: 20vh;
+            width: 73vw;
+        }
+        .Content-two{
+            background: #643030;
+            height: 20vh;
+            width: 73vw;
+        }
+        .Content-three{
+            background: #441818;
+            height: 20vh;
+            width: 73vw;
+        }
+        .spam-1{
+            background: #937575;
+            height: 30vh;
+            width: 27vw;
+        }
+        .spam-2{
+            background: #644C4C;
+            height: 30vh;
+            width: 27vw;
+        }
+        header, div, footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        p{
+            font-size: 45px;
+            font-family: Inter, serif;
+        }
+        div{
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+<header><p>Header</p></header>
+<main>
+    <section>
+        <div class="Content-one">
+            <p>Content-1</p>
+        </div>
+        <div class="Content-two">
+            <p>Content-2</p>
+        </div>
+        <div class="Content-three">
+            <p>Content-3</p>
+        </div>
+    </section>
+    <aside>
+        <div class="spam-1"><p>spam-1</p></div>
+        <div class="spam-2"><p>spam-2</p></div>
+    </aside>
+</main>
+<footer><p>Footer</p></footer>
+</body>
+</html>

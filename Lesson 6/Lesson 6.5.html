@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        label{
+            display: block; /*робимо з лінійного в блочний*/
+            margin: 10px;
+        }
+        form sup{ /*колір зірочки*/
+            color: red;
+        }
+        textarea{
+            resize: none;
+            width: 40px;
+        }
+        .form-registration{
+            border: 3px solid lightseagreen;
+            width: 30%;
+            border-radius: 20px;
+            padding: 50px;
+        }
+        input[type="text"]{   /*текст який друкуємо в формі*/
+            background: lightskyblue;
+            border: 3px solid yellow;
+            border-radius: 30px;
+            color: darkblue;
+            font-family: sans-serif;
+        }
+        input[type="text"]::placeholder{
+            color: red; /*стиль тексту/підказки в комірці*/
+        }
+        input[type="text"]:focus{
+            outline: 2px solid red; /*коли клікаємо (фокусуємо), то рамка виділяється*/
+        }
+        .yes{
+            appearance: none; /*відключаємо стандартну стилізацію чекбоксу*/
+            width: 20px;
+            height: 20px;
+            border: 1px solid grey;
+            margin-bottom: -2px;
+            border-radius: 50%;
+        }
+        .yes:checked{
+            background-image: url(img/snowflake-clipart-original.png);
+            background-size: cover;
+
+
+        }
+    </style>
+</head>
+<body>
+<form class="form-registration">
+    <label for="Name"> Введіть своє ім'я </label>
+    <input type="text" name="name" id="Name" placeholder="Anna" required> <sup>*</sup>
+
+    <label for="Name"> Введіть свій email </label>
+    <input type="email" name="email" id="email" placeholder="example@gmail.com" required> <sup>*</sup>
+
+    <label for="Name"> Введіть пароль </label>
+    <input type="password" name="password" id="password" placeholder="qwerty" required> <sup>*</sup>
+
+    <label for="Name"> Введіть свій вік </label>
+    <input type="number" name="age" id="age" min="18" max="100">
+
+    <input type="file" name="name">
+
+    <input type="date" name="name">
+
+    <label>Сать</label>
+    <label><input type="radio" name="gender" value="male">Чоловіча</label>
+    <label><input type="radio" name="gender" value="female">Жіноча</label>
+
+    <label>
+        <input type="checkbox" class="yes" name="newsletter"> Підписатись на новини
+    </label>
+
+    <label for="lorem">Країна</label>
+    <select id="lorem">
+        <option value=""> Оберіть країну</option>
+        <option value="ua">Україна</option>
+        <option value="ca">Канада</option>
+        <option value="usa">США</option>
+    </select>
+
+    <label for="phone"></label>
+    <select id="phone">
+        <optgroup label="Apple">
+            <option value="x">Iphone X</option>
+            <option value="xr">Iphone XR</option>
+            <option value="xs">Iphone XS</option>
+        </optgroup>
+        <optgroup label="Samsung">
+            <option value="24">Samsung 24</option>
+            <option value="24 plus">Samsung 24 Plus</option>
+            <option value="24 ultra">Samsung 24 Ultra</option>
+        </optgroup>
+    </select>
+
+    <label for="comment"></label>
+    <textarea id="comment" rows="4" cols="30">
+    </textarea>
+    
+    <div>
+        <input type="submit" value="Надіслати">
+        <input type="reset" value="Скинути">
+    </div>
+</form>
+
+</body>
+</html>
