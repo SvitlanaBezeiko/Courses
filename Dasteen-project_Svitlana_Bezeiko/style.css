@@ -1,23 +1,31 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
-    background: #EFF0F3;
-    box-shadow: 4px 6px 13px 0 rgba(215, 215, 215, 0.25);
+    width: 1440px;
+    margin: 0 auto;
 }
-.w-1250{
+.w-1440-first-part {
+    width: 1440px;
+    background: #EFF0F3;
+    margin: 0 auto;
+}
+
+.w-1250-first-part {
     width: 1250px;
     margin: 0 auto;
-    background: #FFFFFE;
+    background: #EFF0F3;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
 /*-----------header---------------*/
-header{
-    width: 100%;
+header {
+    width: 1250px;
     height: 86px;
     flex-shrink: 0;
     background: #EFF0F3;
@@ -25,31 +33,32 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*position: fixed;*/
+    position: fixed;
+    top: 0;
 }
-header nav ul{
+
+header nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
 }
-header h3{
+
+header h2, aside h2 {
     color: #001858;
     font-family: "Plus Jakarta Sans", serif;
     font-size: 36px;
     font-weight: 600;
 }
-header h3 a{
-    width: 48px;
-    height: 27px;
+
+header a, aside a {
     color: #6246EA;
     font-family: "Plus Jakarta Sans", serif;
     font-size: 18px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     text-decoration: none;
 }
+
 nav ul {
     color: #2B2C34;
     font-family: "Plus Jakarta Sans", serif;
@@ -60,7 +69,8 @@ nav ul {
     text-transform: capitalize;
     list-style-type: none;
 }
-nav button{
+
+button {
     display: flex;
     padding: 10px 17px;
     align-items: flex-start;
@@ -74,20 +84,24 @@ nav button{
     background: #6246EA;
     border: none;
 }
-nav button svg{
+
+nav button svg {
     width: 24px;
     height: 24px;
 }
+
 /*---------------------main_Dasteen-introduction-------*/
-main{
-    width: 100%;
-    padding: 164px 0 263px 0;
+main {
+    width: 1250px;
+    height: 814px;
+    margin-top: 164px;
     background: #EFF0F3;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-main h1{
+
+main h1 {
     width: 617px;
     color: #2B2C34;
     font-family: "Plus Jakarta Sans", serif;
@@ -96,7 +110,8 @@ main h1{
     text-transform: capitalize;
     margin: 21px 163px 30px 0;
 }
-main p{
+
+main p {
     width: 652px;
     padding-bottom: 30px;
     color: #9A9494;
@@ -106,12 +121,14 @@ main p{
     font-weight: 400;
     line-height: normal;
 }
-.form-subscription{
+
+.form-subscription {
     display: flex;
     align-items: flex-start;
     gap: 20px;
 }
-input[type='email']{
+
+input[type='email'] {
     display: flex;
     padding: 21px 200px 21px 25px;
     align-items: center;
@@ -124,7 +141,8 @@ input[type='email']{
     font-weight: 400;
     border: none;
 }
-input[type='submit']{
+
+input[type='submit'] {
     display: flex;
     height: 67px;
     padding: 20px 23px 19px 23px;
@@ -140,34 +158,39 @@ input[type='submit']{
     font-weight: 700;
     text-transform: capitalize;
 }
-main img{
+
+main img {
     display: flex;
     width: 470px;
     padding: 12.874px 18.074px 10.757px 17.649px;
     justify-content: center;
     align-items: center;
 }
+
 /*---------------------------------section-browse-categiries-------------------*/
-.section__browse-categories{
-    width: 100%;
+.section__browse-categories {
+    width: 1250px;
     height: 500px;
     flex-shrink: 0;
     background: #EFF0F3;
 }
-.categories{
+
+.categories {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 67px 0 50px 0;
 }
-.cards-with-logo{
+
+.cards-with-logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 68px;
     gap: 37px;
 }
-.card-with-logo{
+
+.card-with-logo {
     width: 220px;
     height: 280px;
     border-radius: 8px;
@@ -177,12 +200,14 @@ main img{
     align-items: flex-start;
     gap: 30px;
 }
-.card-with-logo:hover{
+
+.card-with-logo:hover {
     transition: 1s;
     background: #6246EA;
     box-shadow: 4px 6px 13px 0 rgba(113, 113, 113, 0.25);
 }
-.card-with-logo div{
+
+.card-with-logo div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -193,10 +218,12 @@ main img{
     background: #FFFFFE;
     margin: 65px 130px 0 30px;
 }
-.card-with-logo h2{
+
+.card-with-logo h2 {
     padding-left: 30px;
 }
-h2{
+
+h2 {
     color: #2B2C34;
     font-family: "Plus Jakarta Sans", serif;
     font-size: 24px;
@@ -205,7 +232,9 @@ h2{
     line-height: normal;
     text-transform: capitalize;
 }
-h3{color: #2B2C34;
+
+h3 {
+    color: #2B2C34;
     text-align: right;
     font-family: "Plus Jakarta Sans", serif;
     font-size: 20px;
@@ -215,12 +244,173 @@ h3{color: #2B2C34;
     text-transform: capitalize;
     text-decoration: none;
 }
-/*-------------------------------section-articles----------------------*/
-.section-articles{
-    width: 100%;
-    height: 4792px;
-    background: #FFFFFE;
 
+/*-------------------------------section-articles----------------------*/
+.w-1440-second-part {
+    width: 1440px;
+    background: #FFFFFE;
+    margin: 0 auto;
+}
+
+.w-1250-second-part {
+    width: 1250px;
+    margin: 94px auto 94px auto;
+    background: #FFFFFE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper-articles {
+    width: 1250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.section-articles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.see-all-articles-tab {
+    width: 100%;
+    display: flex;
+    height: 35px;
+    padding: 2px 0 3px 0;
+    justify-content: space-between;
+    align-items: center;
+    gap: 842px;
+
+}
+.articles-row{
+    width: 1250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+article{
+    display: grid;
+    width: 300px;
+    height: 425px;
+    padding: 20px;
+    grid-auto-rows: 50% 35% 15%;
+}
+article:hover{
+    box-shadow: 4px 6px 13px 0 rgba(215, 215, 215, 0.25);
+    transform: 1s;
+}
+.creator{
+    width: 260px;
+    height: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 15px;
+}
+.name-and-date{
+    width: 184px;
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4.2px;
+}
+article h3{
+    width: 260px;
+    text-align: left;
+    padding-top: 25px;
+}
+article h4{
+    color: #2B2C34;
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+
+}
+article p{
+    width: 184px;
+    height: 21px;
+    color: #2B2C34;
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+/*------------------------------section-subscribe--------------------*/
+.section-subscribe{
+    display: inline-flex;
+    padding: 58px 372px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    background: #EFF0F3;
+}
+.subscription-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+.ellipse{
+    position: relative;
+}
+.post-box {
+    position: absolute;
+    top: 20px;
+}
+.subscription-form h2{color: #2B2C34;
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    }
+.subscription-form  p{
+    width: 696px;
+    color: #C0C0C0;
+    text-align: center;
+
+    /* 20 px - Paragraph 1 */
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/*----------------------------footer----------------------------------*/
+footer{
+    width: 1440px;
+    height: 435px;
+    flex-shrink: 0;
+    background: #E4E5E9;
+}
+.w-1250-footer{
+    width: 1250px;
+    padding: 70px 96px 50px 95px;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-content: space-between;
+}
+.messengers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 
 
