@@ -10,8 +10,8 @@
           rel="stylesheet">
 </head>
 <body>
-<div class="w-1440-first-part">
-    <div class="w-1250-first-part">
+<div class="w-1440-main">
+    <div class="w-1250-main">
         <header>
             <div>
                 <h2>Dasteen<a href="#">.blog</a></h2>
@@ -47,8 +47,10 @@
         <main>
             <div>
                 <h1>Hi, i’m Dasteen Front end dev</h1>
-                <p>On this blog I share tips and tricks, frameworks, projects, tutorials, etc
-                    Make sure you subscribe to get the latest updates</p>
+                <div class="main__about-blog-paragraph">
+                    <div class="main__line"></div>
+                    <p>On this blog I share tips and tricks, frameworks, projects, tutorials, etc
+                    Make sure you subscribe to get the latest updates</p></div>
                 <form class="form-subscription">
                     <input type="email" name="email" placeholder="Enter your email here...">
                     <input type="submit" value="Suscribe">
@@ -145,8 +147,8 @@
 </div>
 
 <!--    --------------------------section-articles------------------------ -->
-<div class="w-1440-second-part">
-    <div class="w-1250-second-part">
+<div class="w-1440-section-articles">
+    <div class="w-1250-section-articles">
         <section class="wrapper-articles">
             <div class="section-articles">
                 <div class="see-all-articles-tab">
@@ -210,7 +212,6 @@
                     </article>
                 </div>
             </div>
-
 
             <div class="section-articles">
                 <div class="see-all-articles-tab">
@@ -370,7 +371,7 @@
                             <img src="img/Dasteen-photo.png" alt="Dasteen photo">
                             <div class="name-and-date">
                                 <h4>Dasteen</h4>
-                                <p>Jan 10, 2022 ∙ 3 min read</p>
+                                <p>Jan 10, 2022     ∙     3 min read</p>
                             </div>
                         </div>
                     </article>
@@ -382,7 +383,7 @@
                             <img src="img/Dasteen-photo.png" alt="Dasteen photo">
                             <div class="name-and-date">
                                 <h4>Dasteen</h4>
-                                <p>Jan 10, 2022 ∙ 3 min read</p>
+                                <p>Jan 10, 2022     ∙     3 min read</p>
                             </div>
                         </div>
                     </article>
@@ -407,6 +408,7 @@
 </div>
         <!-- --------------section-subscribe----------------------->
 
+<div class="w-1440-subscribe-part">
     <div class="w-1250-subscribe-part">
         <section class="section-subscribe">
             <div class="subscription-form">
@@ -421,6 +423,7 @@
             </div>
         </section>
     </div>
+</div>
 
 
 <!-- -----------------------------------footer---------------------->
@@ -473,7 +476,7 @@
         <div>
             <hr>
         </div>
-        <div><p>© 2025 Digitaldastin</p></div>
+        <div><p class="©-2025-Digitaldastin">© 2025 Digitaldastin</p></div>
     </div>
 </footer>
 </body>
